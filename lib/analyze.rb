@@ -1,0 +1,3 @@
+class Analyze
+ 
+end
