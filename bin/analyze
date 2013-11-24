@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
-require "./lib/histogram"
+require "./lib/prefix_histogram"
 
-histogram = Histogram.new
-puts histogram.count_words(STDIN.read)
+prefix_histogram = PrefixHistogram.new
+puts prefix_histogram.count_words(STDIN.read)
+
+suffix_histogram = SuffixHistogram.new
+puts suffix_histogram.count_words(STDIN.read)

@@ -1,4 +1,4 @@
-class Histogram
+class PrefixHistogram
   def count_words(name_list)
     lines = name_list.split("\n")
 

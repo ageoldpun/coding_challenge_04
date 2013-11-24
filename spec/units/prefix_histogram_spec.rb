@@ -1,6 +1,6 @@
-require "histogram"
+require "prefix_histogram"
 
-describe Histogram do
+describe PrefixHistogram do
   describe "#count_words" do
   	it "Counts the first word of the line" do
       subject.count_words("Mr. Jones\nMs. Jones").should == "Mr. 1\nMs. 1\n"
