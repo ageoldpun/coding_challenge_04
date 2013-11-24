@@ -1,8 +1,13 @@
 class SuffixHistogram
   def count_words(name_list)
     lines = name_list.split("\n")
-
-    suffixes = lines.map do |line|
+    names = []
+    lines.each do |line|
+      name, number = line.split("\t")
+      names << name
+    end
+            
+    suffixes = names.map do |line|
       line.split(" ").last
     end
 
@@ -21,7 +26,7 @@ class SuffixHistogram
     end
 
     suffix_array = suffix_string.split("\n")
-    suffix_array = suffix_array[0..6]
+    suffix_array = suffix_array[0..11]
 
     suffix_array.join("\n") + "\n"
   end
