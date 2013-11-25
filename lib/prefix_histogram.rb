@@ -21,7 +21,7 @@ class PrefixHistogram
     end
 
     prefix_array = prefix_string.split("\n")
-    prefix_array = prefix_array[0..6]
+    prefix_array = prefix_array[0..4]
 
     prefix_array.join("\n") + "\n"
   end

@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require "./lib/prefix_histogram"
+require "./lib/suffix_histogram"
+
+prefix_histogram = PrefixHistogram.new
+suffix_histogram = SuffixHistogram.new
+
+file_data = STDIN.read
+
+
+
+puts prefix_histogram.count_words(file_data)
+puts "\n"
+puts suffix_histogram.count_words(file_data)

@@ -26,7 +26,7 @@ class SuffixHistogram
     end
 
     suffix_array = suffix_string.split("\n")
-    suffix_array = suffix_array[0..11]
+    suffix_array = suffix_array[0..10]
 
     suffix_array.join("\n") + "\n"
   end
