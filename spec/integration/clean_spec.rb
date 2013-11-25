@@ -12,6 +12,6 @@ describe 'clean.rb' do
 
     system "bin/clean < spec/fixtures/test_data_input.txt > tmp/output.csv"
     $?.should be_success
-    File.read('tmp/output.txt').should == File.read('spec/fixtures/expected_clean_output.txt')
+    File.read('tmp/output.csv').should == File.read('spec/fixtures/expected_clean_output.csv')
   end
 end

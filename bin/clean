@@ -7,8 +7,3 @@ suffix_histogram = SuffixHistogram.new
 
 file_data = STDIN.read
 
-
-
-puts prefix_histogram.count_words(file_data)
-puts "\n"
-puts suffix_histogram.count_words(file_data)
